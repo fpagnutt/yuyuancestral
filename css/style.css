@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Nixie+One&display=swap");
+/*FUENTES CON BUCLE*/
+/* line 3, ../Clase 11/scss/_utilidades.scss */
+.font-light {
+  font-weight: 300;
+}
+
+/* line 3, ../Clase 11/scss/_utilidades.scss */
+.font-reg {
+  font-weight: 400;
+}
+
+/* line 3, ../Clase 11/scss/_utilidades.scss */
+.font-bold {
+  font-weight: 700;
+}
+
+/*SE CREA MIXIN PARA FUTUROS BANNERS - POR LO PRONTO SE UTILIZA 1 SOLO*/
+/* line 1, ../Clase 11/scss/_main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../Clase 11/scss/_main.scss */
+body {
+  min-height: 100vh;
+  font-family: "Nixie One", cursive;
+  justify-content: center;
+  text-align: center;
+}
+
+/*GRID PARA LA HOME*/
+/* line 14, ../Clase 11/scss/_main.scss */
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(6, 240px)/repeat(5, 20%);
+  grid-template-areas: ". header header header ." "main main main main main" "main main main main main" "main main main main main" "main main main main main" "foot foot foot foot foot";
+  align-items: flex-end;
+}
+
+/* line 22, ../Clase 11/scss/_main.scss */
+#header {
+  grid-area: header;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 30, ../Clase 11/scss/_main.scss */
+#header .servicios {
+  font-family: "Nixie One", cursive;
+  font-size: 22px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/*MAIN DEL INDEX - GRID*/
+/* line 39, ../Clase 11/scss/_main.scss */
+#main {
+  grid-area: main;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*IMAGEN DE HOME*/
+}
+
+/* line 46, ../Clase 11/scss/_main.scss */
+#main .texto {
+  font-family: "Nixie One", cursive;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 230px;
+}
+
+/* line 53, ../Clase 11/scss/_main.scss */
+#main .imagenIndex {
+  max-width: 564px;
+  width: 50%;
+  padding-top: 80px;
+}
+
+/*FOOT DE TODAS LAS SECCIONES*/
+/* line 60, ../Clase 11/scss/_main.scss */
+#foot {
+  grid-area: foot;
+  height: 50px;
+  background: radial-gradient(circle, #a8ff52 10%, #edf9d0 100%);
+}
+
+/* line 64, ../Clase 11/scss/_main.scss */
+#foot .imgFoot {
+  max-width: 26px;
+  width: 18%;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+/*MAIN DE LAS SECCIONES CON DISPLAY FLEX*/
+/* line 73, ../Clase 11/scss/_main.scss */
+#main2 {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+/* line 80, ../Clase 11/scss/_main.scss */
+#main2 .wrap {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+}
+
+/* line 85, ../Clase 11/scss/_main.scss */
+#main2 .texto {
+  flex-grow: 1;
+  font-size: 16px;
+  color: black;
+}
+
+/* line 92, ../Clase 11/scss/_main.scss */
+.sobreMi {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+}
+
+/* line 96, ../Clase 11/scss/_main.scss */
+.sobreMi .padding {
+  padding-top: 90px;
+}
+
+/* line 102, ../Clase 11/scss/_main.scss */
+.placeHolder {
+  width: 300px;
+  height: 300px;
+}
+
+/* line 107, ../Clase 11/scss/_main.scss */
+.separacion {
+  height: 30px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: radial-gradient(circle, #a8ff52 10%, #edf9d0 100%);
+}
+
+/* line 116, ../Clase 11/scss/_main.scss */
+.imgFija {
+  width: 100px;
+  position: fixed;
+  top: 155px;
+  right: 25px;
+  animation-name: efectoImg;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+/* line 128, ../Clase 11/scss/_main.scss */
+.containerCarousel {
+  margin-top: 60px;
+  height: 500px;
+  width: 400px;
+}
+
+/*FONDO BLANCO PARA LA NAVBAR*/
+/* line 134, ../Clase 11/scss/_main.scss */
+.bg-light {
+  background-color: #fff !important;
+}
+
+/* line 137, ../Clase 11/scss/_main.scss */
+.fontSizeNavBar {
+  font-size: 30px;
+}
+
+/* line 140, ../Clase 11/scss/_main.scss */
+.gradient {
+  background: radial-gradient(circle, #a8ff52 10%, #edf9d0 100%);
+}
+
+/* line 144, ../Clase 11/scss/_main.scss */
+.paddingTop {
+  padding-top: 40px;
+}
+
+/* line 148, ../Clase 11/scss/_main.scss */
+.tamNormal {
+  height: 400px;
+  width: 300px;
+  padding: 50px;
+}
+
+/* line 155, ../Clase 11/scss/_main.scss */
+.textoPad {
+  padding: 0px 100px;
+}
+
+/* line 158, ../Clase 11/scss/_main.scss */
+.centrado {
+  text-align: center;
+}
+
+/*BANNER DE LA SECCION CONTACTO*/
+/* line 164, ../Clase 11/scss/_main.scss */
+.banner1 {
+  background-image: url("../img/yuyu.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 45%;
+}
+
+/*keyframe de la flecha back*/
+@keyframes efectoImg {
+  0% {
+    width: 60px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+/*mobile first*/
+@media only screen and (max-width: 768px) {
+  /* line 187, ../Clase 11/scss/_main.scss */
+  #header {
+    width: 100%;
+  }
+  /* line 191, ../Clase 11/scss/_main.scss */
+  #header .servicios li {
+    padding: 0 6px;
+    font-size: 16px;
+  }
+  /* line 196, ../Clase 11/scss/_main.scss */
+  #main .imagenIndex {
+    display: none;
+  }
+  /* line 199, ../Clase 11/scss/_main.scss */
+  #main .logo {
+    width: 60%;
+  }
+  /* line 203, ../Clase 11/scss/_main.scss */
+  #foot {
+    font-size: 14px;
+  }
+  /* line 206, ../Clase 11/scss/_main.scss */
+  .imgFija {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* line 212, ../Clase 11/scss/_main.scss */
+  #header .servicios li {
+    padding: 0 8px;
+    font-size: 20px;
+  }
+  /* line 216, ../Clase 11/scss/_main.scss */
+  #main .logo {
+    width: 60%;
+  }
+  /* line 219, ../Clase 11/scss/_main.scss */
+  #foot {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

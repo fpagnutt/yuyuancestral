@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 100vh;
+	font-family: $font-family;
+	justify-content: center;
+	text-align: center;
+
+}
+
+/*GRID PARA LA HOME*/
+.contenedor{
+	width: 100%;
+	display: grid;
+	grid-template: $grid-template;
+	grid-template-areas: $grid-template-areas;
+	align-items: flex-end;
+}
+
+#header{
+	grid-area: header;
+	min-height: 120px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	.servicios{
+		font-family: $font-family;
+		font-size: 22px;
+		flex-grow: 1;
+		text-align: center;
+	}
+}
+
+/*MAIN DEL INDEX - GRID*/
+#main{
+	grid-area: main;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	.texto{
+		font-family: $font-family;
+		font-size: 18px;
+		text-align: center;
+		padding: 10px 230px;
+		}
+	/*IMAGEN DE HOME*/	
+	.imagenIndex{
+		max-width: 564px;
+		width: 50%;
+		padding-top: 80px;
+		}
+	}
+/*FOOT DE TODAS LAS SECCIONES*/
+#foot{
+	grid-area: foot;
+	height: 50px;
+	background: $background;
+	.imgFoot{
+		max-width: 26px;
+		width: 18%;
+		padding-left: 10px;
+		padding-top: 15px;
+	}
+}
+
+/*MAIN DE LAS SECCIONES CON DISPLAY FLEX*/
+#main2{
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+	.wrap{
+		display: flex;
+		flex-direction: wrap;
+		justify-content: space-evenly;
+		}
+	.texto {
+		flex-grow: 1;
+		font-size: 16px;
+		color: $texto-main2;
+		}
+	}
+
+.sobreMi{
+	display: flex;
+	flex-direction: row;
+	padding:0px 50px;
+	.padding{
+		padding-top: 90px;
+	}
+
+}
+
+.placeHolder{
+	width: 300px;
+	height: 300px;
+}
+ 
+.separacion{
+	height: 30px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	background: $background;
+
+}
+
+.imgFija{
+	width: 100px;
+	position: fixed;
+	top: 155px;
+	right: 25px;
+	animation-name: efectoImg;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-delay: 0s;
+
+}
+
+.containerCarousel{
+	margin-top: 60px;
+	height: 500px;
+	width: 400px;
+}
+/*FONDO BLANCO PARA LA NAVBAR*/
+.bg-light{
+	background-color: #fff !important;
+}
+.fontSizeNavBar{
+	font-size: 30px;
+}
+.gradient{
+	background: $background;
+
+}
+.paddingTop{
+	padding-top: 40px;
+}
+
+.tamNormal{
+	height: 400px;
+	width: 300px;
+	padding: 50px;
+
+}
+
+.textoPad{
+	padding: 0px 100px;
+}
+.centrado{
+	text-align: center;
+	
+}
+
+/*BANNER DE LA SECCION CONTACTO*/
+.banner1{
+	@include fondoConCover("../img/yuyu.jpg")
+}
+
+/*keyframe de la flecha back*/
+@keyframes efectoImg{
+	0%{
+		width: 60px;
+	}
+	50%{
+		width: 40px;
+	} 
+	
+	100%{
+		width: 60px;
+	}
+} 
+
+/*mobile first*/
+@media only screen and (max-width: 768px){
+	.contenedor{
+		
+	}
+	#header{
+		width: 100%;
+
+	}
+	#header .servicios li{
+		padding:0 6px;
+		font-size: 16px;
+	}
+	
+	#main .imagenIndex{
+		display:none;
+	}
+	#main .logo{
+		width: 60%;
+	}
+
+	#foot {
+		font-size: 14px;
+	}
+	.imgFija{
+		display: none;
+	}
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+	#header .servicios li{
+		padding: 0 8px;
+		font-size: 20px;
+	}
+	#main .logo{
+		width: 60%;
+	}
+	#foot {
+		font-size: 16px;
+				
+	}
+}
+@media only screen and (min-width: 993px){
+	.contenedor{
+
+	}
+}
