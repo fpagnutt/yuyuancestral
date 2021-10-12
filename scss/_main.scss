@@ -160,9 +160,9 @@ body{
 	
 }
 
-/*BANNER DE LA SECCION CONTACTO*/
+/*BANNER DE LA SECCION CONTACTO - SIN IMAGEN CORRESPONDIENTE AUN*/
 .banner1{
-	@include fondoConCover("../img/yuyu.jpg")
+	@include fondoConCover()
 }
 
 /*keyframe de la flecha back*/
