@@ -5,11 +5,11 @@
 	}
 
 }
-/*SE CREA MIXIN PARA FUTUROS BANNERS - POR LO PRONTO SE UTILIZA 1 SOLO*/
+
 @mixin fondoConCover($imagen){
 	background-image: url($imagen);
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
-	width: 45%;
+	width: 35%;
 }
