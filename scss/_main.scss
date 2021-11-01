@@ -100,8 +100,8 @@ body{
 }
 
 .placeHolder{
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 150px;
 }
  
 .separacion{
@@ -141,9 +141,7 @@ body{
 	background: $background;
 
 }
-.fondoContacto{
-  background: linear-gradient(90deg, rgba(255,253,186,1) 10%, rgba(251,250,240,1) 35%, rgba(179,242,87,1) 100%, rgba(255,254,248,1) 100%);
-}
+
 .paddingTop{
 	padding-top: 40px;
 }

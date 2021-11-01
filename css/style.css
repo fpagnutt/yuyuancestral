@@ -141,8 +141,8 @@ body {
 
 /* line 102, ../Clase 11/scss/_main.scss */
 .placeHolder {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 150px;
 }
 
 /* line 107, ../Clase 11/scss/_main.scss */
@@ -261,7 +261,9 @@ body {
     font-size: 14px;
   }
   /* line 206, ../Clase 11/scss/_main.scss */
-  
+  #main2 .sobreMi img{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {

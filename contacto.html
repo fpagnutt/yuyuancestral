@@ -10,38 +10,35 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<!-- HEADER -->
 	<div id="header">
 		<div class="servicios font-bold centrado gradient">Dejanos tu consulta</div>
 	</div>
-	<!-- MAIN -->
 	<div id="main2">
 		<a href="index.html"><img src="img/back.png" alt="fijo" class="imgFija"></a>
 		<div class="font-bold">
 			<form method="POST" action="contacto.html">
 				<label for="nombre" class="paddingTop">Nombre</label> 
 				<input type="text" name="inp_nombre"  placeholder="Ingresa tu nombre" id="nombre" class="fondoContacto">
-				<p class="paddingTop">
+				<p>
 					<label for="apellido">Apellido</label> 
-					<input type="text" name="inp_apellido"  placeholder="Ingresa tu apellido" id="apellido" class="fondoContacto">
+					<input type="text" name="inp_apellido" placeholder="Ingresa tu apellido" id="apellido" class="fondoContacto">
 				</p>
-				<p class="paddingTop">
+				<p>
 					<label for="email">E-mail</label>
 					<input type="text" name="inp_mail" placeholder="Ingresa tu e-mail" id="email" class="fondoContacto">
 				</p>
-				<p class="paddingTop">
+				<p>
 					<label for="newsletter"> ¿Desea recibir Newsletter? </label>
 					<input type="checkbox" name="mail" id="newsletter" value="newsletter" checked="">
 				</p> 
-				<!-- MENU CON OPCIONES - UNA SELECCIONADA DE FORMA PREDETERMINADA -->
-				<p class="paddingTop">
+				<p>
 					<select name="servicios">
 						<option value= "0" selected disabled> ¿Sobre que desea consultar? </option>
 						<option value="sesiones">Sesiones</option>
 						<option value="iniciaciones">Iniciaciones</option>
 					</select>
 				</p>
-				<div class="paddingTop">
+				<div>
 					<textarea placeholder="Ingresa tu consulta" name="Ingresa tu consulta" class="placeHolder fondoContacto"></textarea>
 				</div>
 				<p class="paddingTop">
