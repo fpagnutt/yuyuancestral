@@ -220,6 +220,9 @@ body {
   min-height: 100vh;
   width: 45%;
 }
+.fondoContacto{
+  background: linear-gradient(90deg, rgba(255,253,186,1) 10%, rgba(251,250,240,1) 35%, rgba(179,242,87,1) 100%, rgba(255,254,248,1) 100%);
+}
 
 /*keyframe de la flecha back*/
 @keyframes efectoImg {
