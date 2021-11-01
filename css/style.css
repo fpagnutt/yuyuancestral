@@ -261,9 +261,7 @@ body {
     font-size: 14px;
   }
   /* line 206, ../Clase 11/scss/_main.scss */
-  .imgFija {
-    display: none;
-  }
+  
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
