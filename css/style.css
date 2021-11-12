@@ -105,8 +105,6 @@ body {
   padding-bottom: 30px;
 }
 
-#main2 .
-
 /* line 80, ../Clase 11/scss/_main.scss */
 #main2 .wrap {
   display: flex;
@@ -259,7 +257,9 @@ body {
   #main2 .sobreMi img{
     display: none;
   }
-  
+  #main2 .imgFija{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
