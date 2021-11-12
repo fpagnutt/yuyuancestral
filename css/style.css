@@ -110,6 +110,8 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+  bottom: 0;
   padding-bottom: 30px;
 }
 
@@ -131,12 +133,12 @@ body {
 .sobreMi {
   display: flex;
   flex-direction: row;
-  padding: 0px 50px;
+  padding: 0px 30px;
 }
 
 /* line 96, ../Clase 11/scss/_main.scss */
 .sobreMi .padding {
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 /* line 102, ../Clase 11/scss/_main.scss */
@@ -198,7 +200,7 @@ body {
 .tamNormal {
   height: 400px;
   width: 300px;
-  padding: 50px;
+  padding: 30px;
 }
 
 /* line 155, ../Clase 11/scss/_main.scss */
@@ -252,6 +254,9 @@ body {
   #main .imagenIndex {
     display: none;
   }
+  #main .texto{
+    padding: 6px 3px;
+  }
   /* line 199, ../Clase 11/scss/_main.scss */
   #main .logo {
     width: 60%;
@@ -260,10 +265,14 @@ body {
   #foot {
     font-size: 14px;
   }
+  #main2 .textoPad{
+    padding: 6px 30px;
+  }
   /* line 206, ../Clase 11/scss/_main.scss */
   #main2 .sobreMi img{
     display: none;
   }
+  
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {

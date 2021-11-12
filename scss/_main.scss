@@ -90,11 +90,12 @@ body{
 	}
 
 .sobreMi{
+	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	padding:0px 50px;
 	.padding{
-		padding-top: 90px;
+		padding-top: 50px;
 	}
 
 }
@@ -197,7 +198,9 @@ body{
 	#main .imagenIndex{
 		display:none;
 	}
-	
+	#main .texto{
+		padding: 6px 3px;
+	}
 	#main .logo{
 		width: 60%;
 	}
@@ -223,8 +226,4 @@ body{
 				
 	}
 }
-@media only screen and (min-width: 993px){
-	.contenedor{
 
-	}
-}
