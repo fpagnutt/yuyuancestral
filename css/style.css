@@ -233,7 +233,7 @@ body {
 @media only screen and (max-width: 768px) {
   /* line 187, ../Clase 11/scss/_main.scss */
   #header {
-    width: 80%;
+    width: 100%;
   }
   /* line 196, ../Clase 11/scss/_main.scss */
   #main .imagenIndex {
@@ -263,11 +263,6 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  /* line 212, ../Clase 11/scss/_main.scss */
-  #header .servicios li {
-    padding: 0 8px;
-    font-size: 20px;
-  }
   /* line 216, ../Clase 11/scss/_main.scss */
   #main .logo {
     width: 60%;
