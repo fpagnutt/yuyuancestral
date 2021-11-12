@@ -190,11 +190,6 @@ body{
 		width: 100%;
 
 	}
-	#header .servicios li{
-		padding:0 6px;
-		font-size: 16px;
-	}
-	
 	#main .imagenIndex{
 		display:none;
 	}
@@ -214,10 +209,6 @@ body{
 
 }
 @media only screen and (min-width: 769px) and (max-width: 992px){
-	#header .servicios li{
-		padding: 0 8px;
-		font-size: 20px;
-	}
 	#main .logo{
 		width: 60%;
 	}

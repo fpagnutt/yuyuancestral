@@ -1,12 +1,4 @@
 $font-family:'Nixie One', cursive;
-$grid-template: repeat(6, 240px) / repeat(5, 20%);
-$grid-template-areas: 
-	". header header header ."
-	"main main main main main"
-	"main main main main main"
-	"main main main main main"
-	"main main main main main"
-	"foot foot foot foot foot";
 $background: radial-gradient(circle, rgba(168,255,82,1) 10%, rgba(237,249,208,1) 100%);
 $texto-main2: black;
 $fonts:(
